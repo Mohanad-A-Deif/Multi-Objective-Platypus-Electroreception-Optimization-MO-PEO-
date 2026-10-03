@@ -1,0 +1,60 @@
+{
+ "seeds": [
+  6000,
+  6039
+ ],
+ "taus": [
+  0.0,
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.6,
+  0.8,
+  1.0
+ ],
+ "tune": [
+  "DTLZ3",
+  "DTLZ5",
+  "DTLZ6",
+  "DTLZ7",
+  "ZDT1",
+  "ZDT6"
+ ],
+ "heldout": [
+  "DTLZ1",
+  "DTLZ2",
+  "DTLZ4",
+  "ZDT2",
+  "ZDT3",
+  "ZDT4"
+ ],
+ "strata": {
+  "smooth unimodal 2-objective": [
+   "ZDT1",
+   "ZDT2"
+  ],
+  "disconnected front": [
+   "ZDT3",
+   "DTLZ7"
+  ],
+  "biased density / hard distance function": [
+   "ZDT6",
+   "DTLZ4",
+   "DTLZ6"
+  ],
+  "many local fronts": [
+   "ZDT4",
+   "DTLZ1",
+   "DTLZ3"
+  ],
+  "smooth unimodal 3-objective": [
+   "DTLZ2",
+   "DTLZ5"
+  ]
+ },
+ "split_seed": 20260920,
+ "rule": "geometric mean over tuning problems of median-IGD regret ratio",
+ "defensible": "held-out GM regret <= 1.5 and at most 2 of 6 held-out regrets > 2",
+ "written": "2026-09-20 23:59:02"
+}

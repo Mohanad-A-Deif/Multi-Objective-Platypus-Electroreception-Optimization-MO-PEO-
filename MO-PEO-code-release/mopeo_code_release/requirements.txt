@@ -1,0 +1,7 @@
+# Exact versions used to produce the paper's results were not recorded.
+# Any reasonably current release of the three libraries below is expected to
+# reproduce the stored numbers, since every stochastic routine is seeded
+# explicitly through NumPy's Generator API.
+numpy
+scipy
+matplotlib
